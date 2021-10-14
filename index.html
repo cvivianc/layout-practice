@@ -1,0 +1,89 @@
+<!-- 
+
+meta viewport declaration
+
+-->
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+    <meta charset=“UTF-8">
+    <meta http-equiv=“X-UA-Compatible” content=“IE=edge”>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0">
+    <title>vivv's Blog</title>
+    <link rel="stylesheet" href="css/styles.css" </head>
+
+<body>
+    <header>
+        <div id=“logo”>vivv’s Blog</div>
+    </header>
+    <article>
+        <section>
+            <h1>CSS Layout</h1>
+            <p>CSS page layout techniques allow us to take elements contained in a web page and control where they’re
+                positioned relative to the following factors: their default position in normal layout flow, the other
+                elements around them, their parent container, and the main viewport/window.</p>
+            <p>Each technique has its uses, advantages, and disadvantages. No technique is designed to be used in
+                isolation. By understanding what each layout method is designed for you’ll be in a good position to
+                understand which method is most appropriate for each task.</p>
+        </section>
+        <section>
+            <h2>CSS Box Model</h2>
+            <p>There are lots of great resources online to help you learn the CSS Box Model: <a
+                    href=“https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model”
+                    target=“_blank”>CSS Box Model</a>. To quote the content:</p>
+            <blockquote><strong>“Everything in CSS has a box around it,</strong> and understanding these boxes is key to
+                being able to create layouts with CSS, or to align items with other items.“</blockquote>
+            <p>As quoted, every HTML element is indeed considered as a rectangular box by the browser.</p>
+            <img src="img/note2.jpg" alt=“photo of wireframe” class="small-img">
+            <p>The CSS Box Model consists of four properties: content, padding, border, and margin. Which can be seen in
+                the illustration above.</p>
+            <p class="clear"> It’s pretty easy to understand the Content portion of the box model. The content is whatever your HTML
+                consists of. It could be a paragraph full of text, or a bulleted list, or an image.</p>
+            <p>Beginning web designers and developers may have some trouble keeping the other parts of the box model
+                straight, so it is important to examine them one by one.</p>
+        </section>
+
+        <div id="banner">I'm sticky</div>
+
+        <section>
+            <h2>Padding</h2>
+            <p>Padding immediately surrounds the content area. Padding is often used to give the content area some
+                breathing room by separating the content from the surrounding border area.</p>
+        </section>
+        <section>
+            <h2>Border</h2>
+            <p>The border area of the box is the outermost part of the box. You can think of it as giving the
+                rectangular box an outline. Borders tend to be hidden on most CSS elements by default, but once visible
+                different styles like color and thickness can be applied to them.</p>
+        </section>
+        <section>
+            <h2>Margin</h2>
+            <p>The margin area exists outside of the box. Margin is the space around an element that separates it from
+                other elements.</p>
+            <p>It’s important to remember that padding and border affect the size of a CSS box, but margin doesn’t.</p>
+        </section>
+    </article>
+
+    <aside>
+        <h3>About me</h3>
+        <figure>
+            <img src="img/note.jpg" alt=“sketchbook”>
+            <figcaption>vivc</figcaption>
+        </figure>
+
+        <p id="bio">Vivian is a second year Design student Victoria University of Wellington.</p>
+        <h3>Other Articles</h3>
+        <nav>
+            <ul>
+                <li><a href=“css-my-first-day.html”>CSS: My first day</a></li>
+                <li><a href=“css-learning-the-basics”>CSS: Learning the basics</a></li>
+                <li><a href=“css-selectors”>CSS selectors!</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>&copy; 2021 vivi</footer>
+</body>
+
+</html>

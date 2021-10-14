@@ -1,0 +1,145 @@
+/*
+shorthand method- top right bottom left clockwise
+percentage will be relative to the total width of the ontainer not height
+thin medium or think for border value
+margin is the space outside the border so doesn't change the size of box
+seperate one box to another
+apply same styles to multiple selectors
+using negative values to margin
+negative values only works for margin in the box model
+order of css, working from the inside out
+auto, centred content, left and right equals
+*/
+
+* {
+    box-sizing: v;
+}
+
+article {
+    margin-top: 3rem;
+}
+
+header {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 15vh; */
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px 15px;
+    border: 12px solid green;
+    border-bottom-color: slateblue;
+    /* margin: 20px 5px; */
+    margin: -8px -8px 20px
+}
+
+section {
+    min-height: 100vh;
+    padding: 1rem;
+    border-bottom: 2px inset peru;
+    background-color: beige;
+}
+
+section p {}
+
+section img {
+    width: 100%;
+    max-width: 400px;
+}
+
+figure,
+aside img,
+#bio {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+}
+
+#bio {
+    padding: 2rem;
+    background-color: blanchedalmond;
+    border: 5px outset plum;
+}
+
+footer {
+    width: 200px;
+    padding: 4px;
+    border: 2px inset purple;
+    margin: 30px auto 15px;
+    color: slateblue;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+ul li {
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.small-img {
+    width: 100%;
+}
+
+#banner {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    padding: 10px 15px;
+    border: 8px solid purple;
+    margin: 0 -8px;
+    background-color: blanchedalmond;
+    font-weight: bold;
+}
+
+figure {
+    z-index: 1;
+    position: relative;
+    margin: 0;
+}
+
+figcaption {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    background-color: rgba(138, 12, 104, 0.5);
+}
+
+@media print {
+    section {
+        min-height: auto;
+    }
+    #banner {
+        display: none;
+    }
+}
+
+@media screen (min-width: 600px) {
+    .small-img {
+        float: left;
+        width: 300px;
+        margin: 0 1rem 1rem 0;
+    }
+    .clear {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 730px) {
+    ul li {
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+
+/* @media screen and (min-width: 900px), (orientation: portrait){
+    section{
+       background-color: red;
+    }
+} */
